@@ -21,7 +21,7 @@ Example:
 from mongoexport.exporter import export_data
 
 __version__ = "0.1.0"
-__author__ = "Your Name"
-__email__ = "your.email@example.com"
+__author__ = "Javier Parada"
+__email__ = "javierparada@pm.me"
 
 __all__ = ["export_data"]

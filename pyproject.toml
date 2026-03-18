@@ -9,7 +9,7 @@ description = "Export data from MongoDB collections with pagination, delays, and
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "Javier Parada", email = "javierparada@pm.me"},
 ]
 requires-python = ">=3.8"
 dependencies = [
@@ -35,10 +35,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/mongoexport"
-Documentation = "https://github.com/yourusername/mongoexport#readme"
-Repository = "https://github.com/yourusername/mongoexport"
-Issues = "https://github.com/yourusername/mongoexport/issues"
+Homepage = "https://github.com/n1nj4t4nuk1/mongoexport"
+Documentation = "https://github.com/n1nj4t4nuk1/mongoexport#readme"
+Repository = "https://github.com/n1nj4t4nuk1/mongoexport"
+Issues = "https://github.com/n1nj4t4nuk1/mongoexport/issues"
 
 [project.scripts]
 mongoexport = "mongoexport.cli:main"
