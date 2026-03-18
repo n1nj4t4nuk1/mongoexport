@@ -1,4 +1,4 @@
-# mongoexport
+# 🍃 mongoexport
 
 Export data from MongoDB collections with advanced features like pagination, configurable delays, and automatic retry logic.
 
