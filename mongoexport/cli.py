@@ -1,5 +1,8 @@
 import argparse
 
+from mongoexport import export_data
+from mongoexport.logging_config import configure_logging
+
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -46,3 +49,14 @@ def parse_arguments() -> argparse.Namespace:
     )
 
     return parser.parse_args()
+
+
+def main() -> None:
+    """Main entry point for the CLI."""
+    configure_logging()
+    args = parse_arguments()
+    export_data(args)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,13 +1,10 @@
-from mongoexport.cli import parse_arguments
-from mongoexport.exporter import export_data
-from mongoexport.logging_config import configure_logging
+"""
+Legacy entry point for mongoexport.
+For new usage, please use the mongoexport CLI directly:
+    mongoexport --uri <uri> --db <db> --collection <collection> ...
+"""
 
-
-def main() -> None:
-    configure_logging()
-    args = parse_arguments()
-    export_data(args)
-
+from mongoexport.cli import main
 
 if __name__ == "__main__":
     main()

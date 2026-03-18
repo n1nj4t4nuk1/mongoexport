@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mongoexport"
+version = "0.1.0"
+description = "Export data from MongoDB collections with pagination, delays, and retry logic"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+requires-python = ">=3.8"
+dependencies = [
+    "pymongo>=3.12.0",
+]
+keywords = ["mongodb", "export", "database"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Database",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/mongoexport"
+Documentation = "https://github.com/yourusername/mongoexport#readme"
+Repository = "https://github.com/yourusername/mongoexport"
+Issues = "https://github.com/yourusername/mongoexport/issues"
+
+[project.scripts]
+mongoexport = "mongoexport.cli:main"
+
+[tool.setuptools]
+packages = ["mongoexport"]
