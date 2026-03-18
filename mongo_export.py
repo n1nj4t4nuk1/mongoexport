@@ -1,6 +1,6 @@
-from mongocollector.cli import parse_arguments
-from mongocollector.exporter import export_data
-from mongocollector.logging_config import configure_logging
+from mongoexport.cli import parse_arguments
+from mongoexport.exporter import export_data
+from mongoexport.logging_config import configure_logging
 
 
 def main() -> None:
