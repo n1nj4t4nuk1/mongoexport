@@ -22,7 +22,7 @@ pip install mongoexport
 ### From Source
 
 ```bash
-git clone https://github.com/yourusername/mongoexport.git
+git clone https://github.com/n1nj4t4nuk1/mongoexport.git
 cd mongoexport
 pip install -e .
 ```
