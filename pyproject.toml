@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mongoexport"
-version = "0.1.1"
+version = "0.1.2"
 description = "Export data from MongoDB collections with pagination, delays, and retry logic"
 readme = "README.md"
 license = {text = "MIT"}
