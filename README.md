@@ -113,6 +113,12 @@ If you encounter any issues, please report them on [GitHub Issues](https://githu
 
 ## Changelog
 
+### Version 0.1.4 (2026-08-24)
+- Update project URLs to the `otsobide` GitHub account
+- Fix the LICENSE link in this README
+- Sync `__version__` with the packaged version
+- No functional changes to the export logic
+
 ### Version 0.1.0 (2026-03-18)
 - Initial release
 - Basic export functionality with pagination
