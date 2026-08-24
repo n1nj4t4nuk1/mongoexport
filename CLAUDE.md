@@ -26,9 +26,9 @@ a single test then runs as `python3 -m pytest -v tests/test_exporter.py::test_na
 There is also **no linter, formatter, or type-checker configured** anywhere — no `[tool.ruff]`,
 `[tool.black]`, `[tool.mypy]`, or `[tool.pytest]` in `pyproject.toml`, and no `setup.cfg`, `tox.ini`,
 or pre-commit config. Existing lines run to ~106 characters, so don't assume an 88-column formatter
-and reflow files. And nothing runs tests or lints in CI: `publish.yml` fires only on a published
-release, and the sole push-triggered workflow is the Codeberg mirror (a build-and-test job was
-removed deliberately in `460ac33`).
+and reflow files. And nothing runs tests or lints in CI: `publish.yml` is the only workflow and it
+fires only on a published release, so pushes and PRs are never checked by anything (a build-and-test
+job was removed deliberately in `460ac33`).
 
 ## Architecture
 
@@ -76,5 +76,5 @@ Four modules, one data path: `cli.parse_arguments()` → `argparse.Namespace` �
 
 Publishing is triggered by a published GitHub Release (`.github/workflows/publish.yml`): `make build`
 → `twine check dist/*` → `pypa/gh-action-pypi-publish` via PyPI trusted publishing (OIDC,
-`id-token: write`, no API token). Every push also mirrors the repo to Codeberg via
-`.github/workflows/mirror-codeberg.yml`.
+`id-token: write`, no API token). That is the only workflow in the repo — the Codeberg push-mirror
+(`mirror-codeberg.yml`) was removed, so nothing is pushed anywhere on commit.
