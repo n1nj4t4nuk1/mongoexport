@@ -22,7 +22,7 @@ pip install mongoexport
 ### From Source
 
 ```bash
-git clone https://github.com/n1nj4t4nuk1/mongoexport.git
+git clone https://github.com/otsobide/mongoexport.git
 cd mongoexport
 pip install -e .
 ```
@@ -88,7 +88,7 @@ export_data(args)
 ### Setup Development Environment
 
 ```bash
-git clone https://github.com/n1nj4t4nuk1/mongoexport.git
+git clone https://github.com/otsobide/mongoexport.git
 cd mongoexport
 pip install -e ".[dev]"
 ```
@@ -101,7 +101,7 @@ pytest
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/n1nj4t4nuk1/mongoexport/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/otsobide/mongoexport/blob/main/LICENSE) file for details.
 
 ## Contributing
 
@@ -109,7 +109,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Issues
 
-If you encounter any issues, please report them on [GitHub Issues](https://github.com/n1nj4t4nuk1/mongoexport/issues).
+If you encounter any issues, please report them on [GitHub Issues](https://github.com/otsobide/mongoexport/issues).
 
 ## Changelog
 

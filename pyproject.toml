@@ -35,10 +35,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/n1nj4t4nuk1/mongoexport"
-Documentation = "https://github.com/n1nj4t4nuk1/mongoexport#readme"
-Repository = "https://github.com/n1nj4t4nuk1/mongoexport"
-Issues = "https://github.com/n1nj4t4nuk1/mongoexport/issues"
+Homepage = "https://github.com/otsobide/mongoexport"
+Documentation = "https://github.com/otsobide/mongoexport#readme"
+Repository = "https://github.com/otsobide/mongoexport"
+Issues = "https://github.com/otsobide/mongoexport/issues"
 
 [project.scripts]
 mongoexport = "mongoexport.cli:main"
